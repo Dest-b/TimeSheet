@@ -10,7 +10,8 @@
                 <span>Hallo <?=htmlspecialchars($_SESSION['user_name'] ?? '')?></span> 
                 <a href="<?php echo $base_url; ?>/logout.php">Uitloggen</a>
             <?php else: ?>
-                <a href="<?php echo $base_url; ?>/login.php">Inloggen</a>
+                <a href="<?php echo $base_url; ?>/login.php">Inloggen</a> |
+                <a href="<?php echo $base_url; ?>/register.php">Registreren</a>
             <?php endif; ?>
         </div>
     </div>
